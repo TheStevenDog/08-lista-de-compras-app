@@ -48,6 +48,16 @@ npx eas-cli build --platform android --profile preview
 
 El perfil `preview` definido en `eas.json` genera directamente un `.apk` instalable apuntando por HTTPS a la API desplegada.
 
+## Capturas de la Aplicación en Funcionamiento
+
+| 1. Lista activa agrupada y tachado | 2. Alta rápida y sugerencias frecuentes | 3. Historial de listas pasadas |
+|---|---|---|
+| ![Lista activa](docs/screenshots/01-lista-activa.jpg) | ![Alta rápida](docs/screenshots/03-agregar-producto-frecuentes.jpg) | ![Historial](docs/screenshots/02-historial.jpg) |
+
+| 4. Proximidad a supermercado (< 300 m) | 5. Menú nativo para compartir | 6. Envío por WhatsApp (solo pendientes) |
+|---|---|---|
+| ![Supermercado cercano](docs/screenshots/05-supermercado-cercano.jpg) | ![Compartir nativo](docs/screenshots/06-menu-compartir.jpg) | ![WhatsApp](docs/screenshots/04-whatsapp-compartir.jpg) |
+
 ## Gobernanza de IA (Sección 14)
 
 - Commit #1 dedicado exclusivamente a reglas de IA, restricciones técnicas (`.gitignore`, `.aiignore`, `.cursorignore`, `.claude/settings.json`), `scripts/verify-ai-safety.mjs` y carpeta `ia/`.
