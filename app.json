@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Lista de Compras Compartible",
+    "slug": "08-lista-de-compras-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "listacompras",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.examenmovil.listacompras",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Usamos tu ubicación únicamente mientras la app está abierta para avisarte cuando estés a menos de 300 metros de un supermercado guardado.",
+        "NSCameraUsageDescription": "Usamos la cámara solo cuando eliges escanear el código de barras de un producto para agregarlo rápidamente."
+      }
+    },
+    "android": {
+      "package": "com.examenmovil.listacompras",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite avisarte si estás cerca (< 300 m) de un supermercado guardado."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite escanear códigos de barras para agregar productos a tu lista."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
