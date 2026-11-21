@@ -1,0 +1,20 @@
+# Restricciones de lectura para asistentes de IA
+# Prohibido leer archivos de entorno, credenciales, keystores o salir del repositorio
+
+.env
+.env.*
+*.keystore
+*.jks
+*.pem
+*.key
+*.p12
+*.p8
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+service-account*.json
+*firebase-adminsdk*.json
+secrets/
+**/secrets/**
+../*
+../**

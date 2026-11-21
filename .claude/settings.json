@@ -1,0 +1,63 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test*)",
+      "Bash(npm run verify:ai-safety*)",
+      "Bash(npm run typecheck*)",
+      "Bash(npx tsc*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(eas build*)",
+      "Bash(eas submit*)",
+      "Bash(npm publish*)",
+      "Bash(curl*)",
+      "Bash(Invoke-WebRequest*)",
+      "Bash(rm -rf*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Edit(.env)",
+      "Edit(.env.*)",
+      "Write(.env)",
+      "Write(.env.*)",
+      "Read(*.keystore)",
+      "Read(**/*.keystore)",
+      "Read(*.jks)",
+      "Read(**/*.jks)",
+      "Read(*.pem)",
+      "Read(**/*.pem)",
+      "Read(*.key)",
+      "Read(**/*.key)",
+      "Read(*.p12)",
+      "Read(**/*.p12)",
+      "Read(*.p8)",
+      "Read(**/*.p8)",
+      "Read(google-services.json)",
+      "Read(**/google-services.json)",
+      "Read(GoogleService-Info.plist)",
+      "Read(**/GoogleService-Info.plist)",
+      "Read(*firebase-adminsdk*.json)",
+      "Read(**/*firebase-adminsdk*.json)",
+      "Read(service-account*.json)",
+      "Read(**/service-account*.json)",
+      "Read(../*)",
+      "Read(../**)",
+      "Edit(../*)",
+      "Edit(../**)",
+      "Write(../*)",
+      "Write(../**)",
+      "Bash(cat .env*)",
+      "Bash(type .env*)",
+      "Bash(Get-Content .env*)",
+      "Bash(printenv*)",
+      "Bash(env)"
+    ]
+  }
+}

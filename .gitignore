@@ -1,0 +1,40 @@
+# Dependencias y cachés
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+coverage/
+
+# Archivos de entorno y secretos (NUNCA versionar)
+.env
+.env.*
+!.env.example
+
+# Keystores, certificados y credenciales móviles
+*.keystore
+*.jks
+*.pem
+*.key
+*.p12
+*.p8
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+service-account*.json
+*firebase-adminsdk*.json
+
+# Compilaciones nativas y artefactos
+android/
+ios/
+*.apk
+*.aab
+*.ipa
+
+# Logs y sistema operativo
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.DS_Store
+Thumbs.db

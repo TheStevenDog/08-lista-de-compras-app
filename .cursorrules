@@ -1,0 +1,12 @@
+# Reglas del proyecto 08-lista-de-compras-app (Cursor / IA)
+
+- Stack obligatorio: Expo, React Native, TypeScript en modo strict, Expo Router, expo-sqlite, expo-secure-store, react-native-gesture-handler, react-native-reanimated, Jest + jest-expo + React Native Testing Library.
+- NUNCA leer .env, .env.*, *.keystore, *.jks, *.pem, *.key, google-services.json, GoogleService-Info.plist ni salir de la carpeta del proyecto.
+- NUNCA incluir firebaseConfig ni el SDK de Firebase en la app móvil. Toda operación de Firebase vive exclusivamente en 08-lista-de-compras-api.
+- Única variable pública permitida: EXPO_PUBLIC_API_URL (HTTPS, sin localhost hardcodeado en producción).
+- Guardar token y refreshToken ÚNICAMENTE en expo-secure-store. Prohibido AsyncStorage para credenciales o tokens.
+- Usar exclusivamente SQL parametrizado (?) en src/repositories/.
+- Todo gesto (deslizar derecha = comprar, deslizar izquierda = eliminar, pulsación larga = duplicar, reordenar) DEBE incluir botón alternativo con accessibilityLabel.
+- Todo sensor (Accelerometer, Location, Barometer, Camera, Sharing) DEBE verificar isAvailableAsync(), pedir permisos bajo demanda con explicación, ejecutar subscription.remove() en cleanup y mantener la lógica en funciones puras probables con mocks.
+- Reglas de negocio: nombre obligatorio, cantidad entera 1..99, producto duplicado suma cantidad, cerrar lista crea una nueva vacía, listaComoTexto() agrupa por categoría y excluye comprados.
+- Ejecutar siempre npm run verify:ai-safety, npm run typecheck y npm test antes de finalizar.
