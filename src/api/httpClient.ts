@@ -5,7 +5,7 @@ import {
   saveSessionTokens,
 } from './tokenStore';
 
-const DEFAULT_API_URL = 'https://08-lista-de-compras-api.vercel.app';
+const DEFAULT_API_URL = 'https://08-lista-de-compras-apii.vercel.app';
 
 export interface ApiErrorDetail {
   campo: string;

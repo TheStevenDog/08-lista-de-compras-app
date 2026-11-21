@@ -14,7 +14,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://08-lista-de-compras-api.vercel.app"
+        "EXPO_PUBLIC_API_URL": "https://08-lista-de-compras-apii.vercel.app"
       }
     },
     "production": {
@@ -22,7 +22,7 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://08-lista-de-compras-api.vercel.app"
+        "EXPO_PUBLIC_API_URL": "https://08-lista-de-compras-apii.vercel.app"
       }
     }
   },
